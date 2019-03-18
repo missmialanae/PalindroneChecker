@@ -15,9 +15,13 @@ public class App {
 
         for( int i = 0; i < w.length(); i++){
 
-            if(w.charAt(i) == w.charAt((w.length() - 1))) {
+            if(w.charAt(0) == w.charAt((w.length() - 1))) {
+
                 return true;
 
+            }else{
+
+                return false;
             }
 
         }
@@ -35,7 +39,9 @@ public class App {
         checker(word);
 
         if(checker(word)){
+
             System.out.println(word + ": true");
+            
         }else{
             System.out.println(word + ": false");
         }
